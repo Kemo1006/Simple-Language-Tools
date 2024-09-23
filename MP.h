@@ -1,0 +1,20 @@
+typedef char string150[151];
+typedef char string20[21];
+typedef char string30[31];
+
+typedef struct TranslationTag TranslationType;
+int AddEntry(int num, TranslationType *Translation);
+void AddTranslations(int num, TranslationType *Translation);
+void ModifyEntry(int num, TranslationType *Translation);
+int DeleteEntry(TranslationType *Translation, int num);
+int DeleteTranslation(TranslationType *Translation, int num);
+void display(TranslationType Translation);
+void DisplayAllEntries(TranslationType *Translation, int num);
+void SearchWord(int num, TranslationType *Translation);
+void SearchTranslation(TranslationType *Translation, int num);
+void SortAlphabetical(TranslationType *Translation, int num);
+void Export(int num, TranslationType *Translation);
+int Import(int num, TranslationType *Translation);
+int ManageDataMenu(int num, TranslationType *Translation);
+void IdentifyMainLanguage(int num, TranslationType *Translation);
+void SimpleTranslation(int num, TranslationType *Translation);
